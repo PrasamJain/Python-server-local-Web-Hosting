@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <title>About</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Lavishly Yours', cursive;
+            font-size: 80px;
+            color: rgb(0, 25, 134);
+            padding: 10px 30px;
+        }
+        nav{
+            background-color: rgb(98, 185, 255);
+            display: grid;
+            place-items: center;
+        }
+        nav ul{
+            list-style-type: none;
+        }
+        nav ul a{
+            display: inline-block;
+            padding: 20px;
+            text-decoration: none;
+            color: #000;
+            transition: 0.2s ease-in;
+            font-size: 18px;
+        }
+        nav ul a:hover{
+            background-color: rgb(27, 76, 182);
+            color:aliceblue;
+        }
+        .items{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 30px 20px;
+            grid-column-gap: 20px;
+            grid-row-gap: 30px;
+        }
+        .item img{
+            width: 380px;
+            height: 280px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+        .item img:hover{
+            transform: scale(1.04);
+        }
+        .item h4{
+            padding: 5px;
+            text-align: center;
+        }
+        .item button{
+            padding: 5px 30px;
+            border: 2px;
+            outline: auto;
+            background-color: rgb(2, 36, 128);
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 18px;
+            display: block;
+            margin: 0 auto;
+            transition: 0.2s;
+        }
+        .item button:hover{
+            transform: scale(1.08);
+
+        }
+        .container{
+            background-color: rgb(157, 235, 255);
+            border: 5px solid rgb(0, 0, 0);
+            height: 250px;
+            width: 1220px;
+            margin: 30px 30px;
+            border-radius: 20px;
+            padding: 40px;
+        }
+        h2{
+            text-align: center;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .name{
+            height: 5px;
+            width: 280px;
+            margin: 20px 20px ;
+            padding: 30px 30px ;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            align-items: center;
+            background-color: gray;
+        }
+        @media screen and (max-width:1000px){
+            .items{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media screen and (max-width:770px){
+            .items{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sagar Sweets</h1>
+    
+    <nav>
+        <ul>
+            <a href="http://127.0.0.1:5500/FOOD_SITE.html"><li>Home</li></a>
+            <a href="http://127.0.0.1:5500/Green"><li>Menu</li></a>
+            <a href="http://127.0.0.1:5500/purple.html"><li>Contact</li></a>
+            <a href="http://127.0.0.1:5500/About.html"><li>About</li></a>
+        </ul>
+    </nav>    
+
+    <section class="items">
+        <div class="item">
+            <img src="static/Gulab.webp" alt="Loaded please wait">
+            <h4>Gulab Jamun</h4>
+            <button>Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="static/ras.jpg" alt="Loaded please wait">
+            <h4>RasGulla</h4>
+            <button>Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="static/milk.webp" alt="Loaded please wait">
+            <h4>Milk Cake</h4>
+            <button>Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="static/kaju.webp" alt="Loaded please wait">
+            <h4>Kaju Katri</h4>
+            <button>Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="static/besan.webp" alt="Loaded please wait">
+            <h4>Besan Laddoo</h4>
+            <button>Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="static/bundi.webp" alt="Loaded please wait">
+            <h4>Bundi Laddoo</h4>
+            <button>Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="static/brfi.webp" alt="Loaded please wait">
+            <h4>Barfi</h4>
+            <button>Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="static/mava.webp" alt="Loaded please wait">
+            <h4>Mawa Barfi</h4>
+            <button>Buy Now</button>
+        </div>
+        <div class="item">
+            <img src="static/halwa.webp" alt="Loaded please wait">
+            <h4>Halwa</h4>
+            <button>Buy Now</button>
+        </div>
+        
+    </section>
+
+    <hr>
+
+    <section class="container">
+        <div>
+            <h2>ABOUT </h2>
+            <br>
+            <p>One can get a beautiful scene of colourful sweets in any indian sweet shop. 
+                Sweets are symbol of good gesture in india. Hence, sweets are first tasted when any new thing 
+                happens or if important decisions are taken. In most countries sweets are the last course of 
+                a meal. In India though they are served with the rest of the meal and in some traditions especially during 
+                celebrations, people start eating a meal only after having had a bite of the sweet on the 
+                plate, to signify the celebration.Indian sweets are known as 'Mithai'. They rely heavily on
+                sugar, milk and condensed milk and frying, however the bases of the sweets vary by region. 
+                They more inte nse and sweeter than western sweets and desserts and quite a bit heavier since they're 
+                made mainly in Ghee which is clarified butter.</p>
+        </div>
+    </section>
+
+    <hr>
+    <br>
+
+    
+    <form action="#" class="container">
+        <h2>CONTACT DETAILS</h2> <br>
+        <div id="about">
+            <label for="name" >Name</label>
+            <input type="text" name="myName" id="name" class="name">   <!-- take input from user -->
+
+            <label for="email">Email</label>
+            <input type="email" name="myEmail" id="email" class="name">
+
+            <label for="mobile">Mobile</label>
+            <input type="number" name="myMobile" id="mobile" class="name">
+        </div>
+    </form>
+
+</body>
+</html>
